@@ -15,4 +15,4 @@ ENTER
 
 REM in this case, the user has to click the button "run web miner" since Tab will not select it
 REM another possibility is to use "GUI r" to run a program
-REM "GUI SPACE" also works on computers that have locked Prompts and Run
+REM "GUI SPACE" also works on computers that have locked Prompts and Run Dialog
