@@ -26,6 +26,10 @@ Powershell -command "$wshell = New-Object -ComObject wscript.shell;[system.Diagn
 exit
 ```
 
+The rest of the script then saves the Batch file to the Documents folder, away from a user's immediate view. Sadly this part of the script encountered problems using the REPEAT function in which "TAB REPEAT 8" did not work as intended and the script always got stuck to File Explorer's search bar, never being able to select the folder and save the file properly so "REPEAT" had to be removed in this instance
+
+The batch file's name is then searched and executed, the delay can give the attacker enough time to remove the device from the machine and be far away before it executes
+
 <a href="https://ducktoolkit.com/encode"> Ducktoolkit </a> utilized to encode scripts
 
 ### <a href="https://docs.hak5.org/usb-rubber-ducky-1/the-ducky-script-language/ducky-script-quick-reference">Ducky script references</a>
