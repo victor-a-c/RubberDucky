@@ -1,11 +1,12 @@
 # Silent Roll
+***
 
 This script does the following actions respectively
-<ul>
-	<li>Raises volume to maximum</li>
-	<li>Creates Batch file</li>
-	<li>Runs Batch file</li>
-</ul>
+
++ Raises volume to maximum
++ Creates Batch file
++ Runs Batch file
+***
 
 ##Description
 The script was thought in a way that the payload could be executed in machines that have some level of protection and wont allow the user to open Run Dialog or CMD straight away
@@ -30,6 +31,10 @@ The rest of the script then saves the Batch file to the Documents folder, away f
 
 The batch file's name is then searched and executed, the delay can give the attacker enough time to remove the device from the machine and be far away before it executes
 
-<a href="https://ducktoolkit.com/encode"> Ducktoolkit </a> utilized to encode scripts
+***
+[Ducktoolkit][1] utilized to encode scripts
 
-### <a href="https://docs.hak5.org/usb-rubber-ducky-1/the-ducky-script-language/ducky-script-quick-reference">Ducky script references</a>
+### [Hak5 Ducky script references][2]
+
+[1]: https://ducktoolkit.com/encode
+[2]: https://docs.hak5.org/usb-rubber-ducky-1/the-ducky-script-language/ducky-script-quick-reference
