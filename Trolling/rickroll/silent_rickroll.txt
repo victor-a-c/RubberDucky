@@ -1,6 +1,9 @@
 REM Author: victor-a-c
 REM Title: silent_rickroll
 REM Target: Windows10/11
+REM Props: Hak5
+REM Version: 2.0
+REM Category: Prank
 
 REM Description:
 REM the payload sets volume to maximum
@@ -43,9 +46,9 @@ REM Batch file will run while minimized
 STRING if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
 DELAY 100
 ENTER
-REM batch delay for when Never Gonna Give You Up will start being played
+REM batch delay for when "Never Gonna Give You Up" will start being played
 REM enough time for the ducky to be removed after the script is executed and allow for a safe getaway
-STRING TIMEOUT /T 10
+STRING TIMEOUT /T 30
 DELAY 500
 ENTER
 REM on default browser
