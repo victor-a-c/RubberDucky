@@ -1,3 +1,6 @@
+REM set language
+LOCALE pt-br
+
 REM Author: victor-a-c
 REM Title: silent_rickroll
 REM Target: Windows10/11
