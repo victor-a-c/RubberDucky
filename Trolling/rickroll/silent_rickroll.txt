@@ -1,5 +1,5 @@
 REM set language
-LOCALE pt-br
+LOCALE pt-BR
 
 REM Author: victor-a-c
 REM Title: silent_rickroll
